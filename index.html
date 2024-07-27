@@ -1,1 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Komal Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    /* Custom CSS for Portfolio */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+    }
+    p {
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+    /* Navigation Bar */
+    .navbar {
+      transition: background-color 0.3s ease-in-out;
+      background-color: #0000FF;
+    }
+    .navbar .navbar-brand {
+      font-size: 1.75rem;
+      font-weight: 500;
+    }
+    .navbar .nav-link {
+      font-size: 1.1rem;
+      color: #fff !important;
+    }
+    .navbar .nav-link:hover {
+      color: #ffc107 !important;
+    }
+   /* Hero Section */
+#hero {
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+  background-image: url('https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/about/5075841.jpg?raw=true');
+  background-size: cover;
+  background-position: center;
+  height: 600px; /* Adjust the height as needed for a larger banner */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+#hero h1 {
+  font-size: 5rem; /* Increase font size for larger text */
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 1.5rem; /* Increase font size for larger text */
+  margin-bottom: 30px;
+  white-space: nowrap; /* Prevent line break */
+  overflow: hidden; /* Hide overflow */
+  border-right: 0.15em solid orange; /* Typing cursor effect */
+  animation: typing 3.5s steps(30, end);
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+
+/* About Section */
+#about {
+  padding: 100px 0;
+  background-color: #fff;
+}
+#about .personal-picture {
+  width: 400px; !important;
+  height:400px; !important;
+  border-radius: 110%;
+  margin-bottom: 90px;
+}
+#about h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #000; /* Text color black */
+}
+#about p {
+  font-size: 1.1rem; /* Increase text size slightly */
+  color: #000; /* Text color black */
+}
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+/* Custom CSS for Skills Section */
+#skills {
+  padding: 100px 0;
+  background-color: #fff;
+}
+
+.skills-content {
+  margin-top: 50px;
+}
+
+.skill-category {
+  margin-bottom: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.skill-category h3 {
+  font-size: 1.5rem;
+  color: #343a40; /* Dark color for heading */
+  margin-bottom: 10px;
+}
+
+.skill-category p {
+  font-size: 1.1rem;
+  color: #666; /* Slightly lighter text color */
+  line-height: 1.8;
+}
+
+    /* Projects Section */
+#projects {
+  padding: 100px 0;
+  background-color: #fff5d7;
+}
+
+#projects h1 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#projects .card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#projects .card:hover {
+  transform: translateY(-10px);
+}
+
+#projects .project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#projects .card-body {
+  padding: 20px;
+}
+
+#projects .card-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+#projects .card-text {
+  flex-grow: 1;
+}
+
+/* Button Styles */
+#projects .btn-small {
+  padding: 0.5rem 1rem; /* Adjust padding for a smaller button */
+  font-size: 0.8rem; /* Adjust font size */
+  border-radius: 0.25rem; /* Slightly smaller border radius */
+}
+
+#projects .btn-small.btn-primary {
+  background-color: #007bff; /* Bootstrap primary color */
+  border: none;
+}
+
+#projects .btn-small.btn-secondary {
+  background-color: #6c757d; /* Bootstrap secondary color */
+  border: none;
+}
+
+#projects .btn-small:hover {
+  opacity: 0.9;
+}
+    /* Contact Section */
+    #contact {
+      padding: 100px 0;
+      background-color: #f4f4f9;
+    }
+    #contact h1 {
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+    #contact .social-icon img {
+      width: 40px;
+      margin: 0 10px;
+      transition: transform 0.3s;
+    }
+    #contact .social-icon img:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Gourav Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Welcome to My Portfolio</h1>
+      <p id="animated-text">I'm Gourav Yadav, A Passionate Data Scientist.</p>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center">
+        <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/Untitled%20design.jpg?raw=true" class="img-fluid personal-picture" alt="Personal Picture">
+      </div>
+      <div class="col-md-6 text-left">
+        <h1>About Me</h1>
+        <p>My name is Gourav Yadav, and I'm a Data Scientist with a passion for uncovering insights from data and leveraging them to drive impactful decisions.</p>
+        <p>I'm fascinated by the power of data to unravel complex problems and uncover hidden patterns that can shape our understanding of the world around us.</p>
+        <p>Through this portfolio, I aim to showcase my growth, projects, and achievements as I navigate the exciting world of data science.</p>
+        <a href="https://drive.google.com/file/d/1Hu-5ZYGtYzjoMbdA-2E6m2MwbsSsnSnq/view?usp=drive_link" class="btn btn-primary mt-3" download="Gourav_Ds_Resume.pdf">Resume</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Skills Section -->
+<section id="skills">
+  <div class="container">
+    <h1 class="title">My Skills</h1>
+    <div class="skills-content">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="skill-category">
+            <h3>Languages & Tools</h3>
+            <p>Python | SQL | Git | GitHub</p>
+          </div>
+          <div class="skill-category">
+            <h3>Library & Framework</h3>
+            <p>Numpy | Pandas | Matplotlib | Seaborn | Bokeh | Plotly | Scikit-learn | Flask | TensorFlow | PyTorch</p>
+          </div>
+          <div class="skill-category">
+            <h3>Machine Learning</h3>
+            <p>Supervised Learning | Unsupervised Learning | Exploratory Data Analysis (EDA) | Deep Learning | Natural Language Processing (NLP) | Feature Engineering | Computer Vision</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="skill-category">
+            <h3>Mathematics for ML & DL</h3>
+            <p>Statistics | Probability | Linear Algebra | Calculus</p>
+          </div>
+          <div class="skill-category">
+            <h3>Tools for Data Analysis & Visualization</h3>
+            <p>Tableau | Power BI | Excel</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Projects Section -->
+<section id="projects">
+  <div class="container">
+    <h1 style="color: #000000;">Projects</h1>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/electric-car-2545290_640.png?raw=true" class="card-img-top project-image" alt="Electric Vehicle Market Analysis">
+          <div class="card-body">
+            <h5 class="card-title">Electric Vehicle Market Analysis</h5>
+            <p class="card-text">This project analyzes trends in Electric Vehicle (EV) registrations based on available data. It examines historical data, forecasts future registrations, and draws insights into the growth of the EV market.</p>
+            <a href="https://github.com/Gourav4534/EVMarketSizeAnalysis" class="btn btn-primary" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/download%20(3).jpg?raw=true" class="card-img-top project-image" alt="Customer Lifetime Value Prediction">
+          <div class="card-body">
+            <h5 class="card-title">Customer Lifetime Value Prediction</h5>
+            <p class="card-text">This project focuses on predicting the lifetime value of customers for a business based on their historical interactions. The project applies regression techniques to estimate the future value that a customer will bring to the business.</p>
+            <a href="https://github.com/Gourav4534/CodeClause_Data_Science_Internship/tree/main/Task_02" class="btn btn-primary" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/uber.jpg?raw=true" class="card-img-top project-image" alt="Uber Supply-Demand Gap Analysis">
+          <div class="card-body">
+            <h5 class="card-title">Uber Supply-Demand Gap Analysis</h5>
+            <p class="card-text">This project analyzes the supply-demand gap for Uber services. It identifies trends and patterns in customer requests and driver availability to understand the dynamics of trip completion, cancellations, and instances where no cars are available.</p>
+            <a href="https://github.com/Gourav4534/Uber_Supply_Demand_Gap_Analysis_Project" class="btn btn-primary" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+      <!-- New Project Card -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/Medical_cost_pred.jpg?raw=true" class="card-img-top project-image" alt="Medical Cost Prediction">
+          <div class="card-body">
+            <h5 class="card-title">Medical Cost Prediction</h5>
+            <p class="card-text">This project predicts medical costs based on various individual features such as age, BMI, smoking status, and region. It involves analyzing and forecasting medical charges using regression techniques.</p>
+            <a href="https://github.com/Gourav4534/Medical_cost_prediction" class="btn btn-primary" target="_blank">View on GitHub</a>
+            <a href="https://medical-cost-prediction-99x5.onrender.com/prediction" class="btn btn-secondary" target="_blank">Visit Website</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Me Section -->
+<section id="contact">
+  <div class="container">
+    <h1>Contact Me</h1>
+    <div class="row mt-5">
+      <div class="col-md-6 mx-auto text-center">
+        <a href="https://www.linkedin.com/in/gouravyadav2" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/linkedin.png?raw=true" alt="LinkedIn"></a>
+        <a href="https://twitter.com/gouravvyadav" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/twitter.png?raw=true" alt="Twitter"></a>
+        <a href="https://instagram.com/gourav_vyadav" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/download.jpg?raw=true" alt="Instagram"></a>
+        <a href="https://github.com/Gourav4534" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/github.png?raw=true" alt="GitHub"></a>
+        <a href="https://medium.com/@gouravyadav1" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/medium.png?raw=true" alt="Medium"></a>
+        <a href="mailto:gouravyadav684@gmail.com" class="social-icon"><img src="https://github.com/Gourav4534/Gourav_Portfolio_website/blob/main/images/download.png?raw=true" alt="Email"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="text-center py-3">
+  <p>&copy; 2024 Gourav's Portfolio. All rights reserved.</p>
+</footer>
+
+<!-- jQuery and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
